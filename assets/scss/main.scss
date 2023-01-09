@@ -1,0 +1,8 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* personalización variable de bootstrap */
+
+$font-family-base: 'patrick hand';
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"

@@ -9,9 +9,9 @@ $font-family-base: 'patrick hand';
 
 /* personalicación colores básicos */
 
-$primary: #78c2ad;
+$primary: #56cc9d;
 $secondary: #f3969a;
-$success: #56cc9d;
+$success: #d9f5ed;
 $yellow-j: #ffce67;
 
 /* personalización colores theme */
@@ -26,10 +26,50 @@ $theme-colors: (
 
 /*IMPORTACIÓN DE BOOTSTRAP*/
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// CAMBIOS A LA BASE DE BOOTSTRAP
+/* CAMBIOS A LA BASE DE BOOTSTRAP*/
+ 
+/* clase fantasma  */
+
+$tcolor: white;
+
+.javistyle {
+    background-color: $secondary;
+    color: $tcolor;
+    text-align: center;
+}
+
+/* @extend */
+
+.list-group-item {
+
+    @extend .javistyle;
+    
+}
+
+$mbutton: 5%;
+
+.btn{
+    margin: $mbutton;
+    background-color: $yellow-j;
+    border-radius: 10px;
  
 
+}
 
+/*clase fantasma */
 
+.javistyle1{
+   
+    color: $primary;
+    text-align: center;
+    background-color: $success;
+
+}
+
+/* extend*/
+
+.card-body {
+   @extend .javistyle1;
+}

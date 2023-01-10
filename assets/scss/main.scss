@@ -5,5 +5,31 @@
 
 $font-family-base: 'patrick hand';
 
+/* COLORES */
+
+/* personalicación colores básicos */
+
+$primary: #78c2ad;
+$secondary: #f3969a;
+$success: #56cc9d;
+$yellow-j: #ffce67;
+
+/* personalización colores theme */
+
+$theme-colors: (
+
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "yellow-j": $yellow-j,
+);
+
+/*IMPORTACIÓN DE BOOTSTRAP*/
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
+// CAMBIOS A LA BASE DE BOOTSTRAP
+ 
+
+
+
